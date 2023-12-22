@@ -1,0 +1,15 @@
+{
+  "name": "furgao",
+  "version": "1.0.0",
+  "description": "Webhook relay to Gotify",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Flaverton Rodrigues Rosa <contact@droposhado.org>",
+  "license": "MIT",
+  "devDependencies": {
+    "serverless-offline": "^8.3.1",
+    "serverless-python-requirements": "^5.2.2"
+  }
+}

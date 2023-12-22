@@ -1,0 +1,21 @@
+{
+  "payload_version": 1,
+  "notification_configuration_id": "nc-RNK8epyR5KWE4pDc",
+  "run_url": "https://app.terraform.io/app/droposhado-org/meta/runs/run-kWn16BRBhDcRAqQG",
+  "run_id": "run-kWn16BRBhDcRAqQG",
+  "run_message": "Triggered via UI",
+  "run_created_at": "2023-10-06T15:35:46.000Z",
+  "run_created_by": "droposhado",
+  "workspace_id": "ws-iB5GXfjS8BVD7QZW",
+  "workspace_name": "meta",
+  "organization_name": "droposhado-org",
+  "notifications": [
+    {
+      "message": "Run Created",
+      "trigger": "run:created",
+      "run_status": "pending",
+      "run_updated_at": "2023-10-06T15:35:46.000Z",
+      "run_updated_by": "droposhado"
+    }
+  ]
+}

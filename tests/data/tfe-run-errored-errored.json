@@ -1,0 +1,21 @@
+{
+  "payload_version": 1,
+  "notification_configuration_id": "nc-RNK8epyR5KWE4pDc",
+  "run_url": "https://app.terraform.io/app/droposhado-org/meta/runs/run-GpCk6vTorpvrP43E",
+  "run_id": "run-GpCk6vTorpvrP43E",
+  "run_message": "add port to gotify secrets",
+  "run_created_at": "2023-10-06T18:40:39.000Z",
+  "run_created_by": "droposhado",
+  "workspace_id": "ws-iB5GXfjS8BVD7QZW",
+  "workspace_name": "meta",
+  "organization_name": "droposhado-org",
+  "notifications": [
+    {
+      "message": "Run Errored",
+      "trigger": "run:errored",
+      "run_status": "errored",
+      "run_updated_at": "2023-10-06T18:41:12.000Z",
+      "run_updated_by": null
+    }
+  ]
+}

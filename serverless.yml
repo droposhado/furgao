@@ -1,0 +1,34 @@
+service: aws-python-simple-http-endpoint
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: python3.10
+
+functions:
+  tfe_general_route:
+    handler: furgao.tfe.handler
+    environment:
+        GOTIFY_URL: ${ssm:/droposhado-org/k8s/gotify/url~true}
+        GOTIFY_TOKEN: ${ssm:/droposhado-org/k8s/gotify/token~true}
+        SENTRY_DSNN: ${ssm:/droposhado-org/k8s/furgao/sentry-dsn~true}
+    events:
+      - httpApi:
+          path: /tfe
+          method: post
+
+plugins:
+  - serverless-lift
+  - serverless-python-requirements
+  - serverless-domain-manager
+  
+custom:
+  customDomain:
+    domainName: webhook.${env:DOMAIN}
+    basePath: ''
+    stage: ${self:provider.stage}
+    createRoute53Record: true
+
+package:
+  patterns:
+    - "!node_modules/**"
